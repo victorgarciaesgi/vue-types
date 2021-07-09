@@ -13,8 +13,8 @@ export const bool = () =>
     type: Boolean,
   })
 
-export const string = () =>
-  toValidableType('string', {
+export const string = <T extends string = string>() =>
+  toValidableType<T>('string', {
     type: String,
   })
 
